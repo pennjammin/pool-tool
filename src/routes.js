@@ -1,4 +1,6 @@
 import React from "react";
+import Layout from "./Components/Layout.js";
+
 export default class Routes {
 
   apply(routeHandler) {
@@ -7,7 +9,7 @@ export default class Routes {
       {
         path: "/",
         exact: true,
-        component: () => <h1>Hello, World!</h1>,
+        component: () => <Layout></Layout>,
       },
     ];
 
